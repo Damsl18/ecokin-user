@@ -3,7 +3,7 @@
  * Modifie ces valeurs selon ton environnement (local, staging, production).
  */
 const CONFIG = {
-  API_BASE_URL: 'https://ecokin-api.onrender.com/api',
-  UPLOADS_BASE_URL: 'https://ecokin-api.onrender.com/',
+  API_BASE_URL: '/api',
+  UPLOADS_BASE_URL: '',
   PUBLIC_APP_URL: 'https://ecokin-public.netlify.app',
 };
