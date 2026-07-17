@@ -34,7 +34,7 @@ async function markSignalementRead(id) {
 function popupSignalement(s, isOwn) {
   return `
     <strong>${escapeHtml(s.titre || 'Signalement')}</strong><br>
-    <span class="badge-statut badge-${s.statut}">${STATUT_LABELS_SIGNALEMENT[s.statut] || s.statut}</span>
+    <span class="badge-statut badge-${s.statut || ''}">${STATUT_LABELS_SIGNALEMENT[s.statut] || s.statut || 'Validé'}</span>
     ${isOwn ? ' <em>(le mien)</em>' : ''}<br>
     <small>${escapeHtml(s.adresse)}</small><br>
     ${s.photo_path ? `<img src="${photoUrl(s.photo_path)}" alt="" style="width:100%; border-radius:8px; margin:6px 0;">` : ''}
